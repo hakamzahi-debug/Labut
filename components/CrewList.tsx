@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Users, X, Github, Twitter, Shield, Code, Zap, Heart, Camera, Palette, Music, Cpu } from 'lucide-react';
 
@@ -7,14 +6,14 @@ interface CrewListProps {
 }
 
 const CREW_MEMBERS = [
-  { name: 'MistHaze (Haze)', role: 'Founder & Animator', bio: 'The visionary and lead developer of the KabutCraft ecosystem.', icon: Shield, color: 'text-amber-500' },
-  { name: 'Lopli', role: 'Studio Member', bio: 'Creative force contributing to the KabutCraft vision.', icon: Zap, color: 'text-purple-500' },
-  { name: 'Hanzen', role: 'Studio Member', bio: 'Technical specialist and core studio contributor.', icon: Code, color: 'text-cyan-500' },
-  { name: 'Keshi', role: 'Visual Artist', bio: 'Bringing aesthetic excellence to every KabutCraft production.', icon: Palette, color: 'text-pink-500' },
-  { name: 'Rain', role: 'Project Coordinator', bio: 'Ensuring everything flows smoothly in the studio.', icon: Heart, color: 'text-blue-500' },
-  { name: 'Nia', role: 'Multimedia Expert', bio: 'Crafting diverse digital experiences for the community.', icon: Camera, color: 'text-green-500' },
-  { name: 'Renmaru', role: 'Sound Designer', bio: 'Defining the sonic identity of our animations.', icon: Music, color: 'text-indigo-500' },
-  { name: 'Asep', role: 'Backend Guardian', bio: 'The backbone of our technological infrastructure.', icon: Cpu, color: 'text-slate-500' },
+  { name: 'MistHaze (Haze)', role: 'Pemilik Utama & Pembuat', bio: '', icon: Shield, color: 'text-amber-500' },
+  { name: 'Lopli', role: 'Voice Actor', bio: '', icon: Zap, color: 'text-purple-500' },
+  { name: 'Hanzen', role: 'Voice Actor', bio: '', icon: Code, color: 'text-cyan-500' },
+  { name: 'Keshi', role: 'Voice Actor', bio: '', icon: Palette, color: 'text-pink-500' },
+  { name: 'Rain', role: 'Voice Actor', bio: '', icon: Heart, color: 'text-blue-500' },
+  { name: 'Nia', role: 'Voice Actor', bio: '', icon: Camera, color: 'text-green-500' },
+  { name: 'Renmaru', role: 'Voice Actor', bio: '', icon: Music, color: 'text-indigo-500' },
+  { name: 'Asep', role: 'Voice Actor', bio: '', icon: Cpu, color: 'text-slate-500' },
 ];
 
 const CrewList: React.FC<CrewListProps> = ({ onClose }) => {
@@ -42,16 +41,15 @@ const CrewList: React.FC<CrewListProps> = ({ onClose }) => {
               <div className="flex-1 min-w-0">
                 <h3 className="font-display font-bold text-slate-900 dark:text-white text-base md:text-lg truncate">{member.name}</h3>
                 <p className="text-indigo-600 dark:text-indigo-400 text-[10px] md:text-xs font-bold uppercase tracking-wider mb-1">{member.role}</p>
-                <p className="text-slate-600 dark:text-slate-400 text-xs md:text-sm italic line-clamp-2">{member.bio}</p>
               </div>
             </div>
           ))}
         </div>
 
         <div className="p-6 bg-slate-50 dark:bg-slate-950/50 flex justify-center gap-4 shrink-0 border-t border-slate-200 dark:border-white/5">
-          <button className="flex items-center gap-2 text-[10px] font-bold text-slate-500 hover:text-indigo-500 transition-colors uppercase tracking-widest">
+          <a href="https://github.com/kabutcraft" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-[10px] font-bold text-slate-500 hover:text-indigo-500 transition-colors uppercase tracking-widest">
             <Github className="w-4 h-4" /> Github
-          </button>
+          </a>
           <div className="w-[1px] h-4 bg-slate-300 dark:bg-slate-800"></div>
           <button className="flex items-center gap-2 text-[10px] font-bold text-slate-500 hover:text-indigo-500 transition-colors uppercase tracking-widest">
             <Twitter className="w-4 h-4" /> Twitter
